@@ -5,9 +5,9 @@
 			"style": {
 			}
 		},
-		{"path": "pages/shop/shop"},
-		{"path": "pages/menu/menu"},
-		{"path": "pages/my/my"}
+		{"path": "pages/sort/sort"},
+		{"path": "pages/collection/collection"},
+		{"path": "pages/mine/mine"}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -16,22 +16,34 @@
 		 "navigationStyle":"custom"
 	},
 	"tabBar":{
+		"selectedColor":"#de4d2f",
+		"fontSize":"12px",
+		"backgroundColor":"#f4f7fc",
+		"borderStyle":"white",
 		"list":[
 			{
 				"text":"首页",
-				"pagePath":"pages/index/index"
+				"pagePath":"pages/index/index",
+				"iconPath":"static/tabbared/shouye.png",
+				"selectedIconPath":"static/tabbar/shouye.png"
 			},
 			{
-				"text":"商城",
-				"pagePath":"pages/shop/shop"
+				"text":"分类",
+				"pagePath":"pages/sort/sort",
+				"iconPath":"static/tabbared/leimupinleifenleileibie.png",
+				"selectedIconPath":"static/tabbar/leimupinleifenleileibie.png"
 			},
 			{
-				"text":"信息",
-				"pagePath":"pages/menu/menu"
+				"text":"收藏",
+				"pagePath":"pages/collection/collection",
+				"iconPath":"static/tabbared/startRead.png",
+				"selectedIconPath":"static/tabbar/startRead.png"
 			},
 			{
 				"text":"我的",
-				"pagePath":"pages/my/my"
+				"pagePath":"pages/mine/mine",
+				"iconPath":"./static/tabbared/character-avatar.png",
+				"selectedIconPath":"static/tabbar/character-avatar.png"
 			}
 		]
 	}
