@@ -14,8 +14,13 @@ _vue.default.config.productionTip = false;
 
 _App.default.mpType = 'app';
 
-//将顶部通知栏的⾼度挂载全局,⽅便其他⻚⾯调⽤
+//将顶部通知栏的高度挂载全局⽤
 _vue.default.prototype.$statusBarHeight = uni.getSystemInfoSync().statusBarHeight;
+
+//引入icon组件
+var icon = function icon() {__webpack_require__.e(/*! require.ensure | components/icon/icon */ "components/icon/icon").then((function () {return resolve(__webpack_require__(/*! ./components/icon/icon.vue */ 39));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
+//全局注册icon组件
+_vue.default.component("icon", icon);
 
 var app = new _vue.default(_objectSpread({},
 _App.default));
@@ -90,8 +95,14 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+var statusBarHeight = uni.getSystemInfoSync().statusBarHeight;var _default =
 {
+  data: function data() {
+    return {
+      statusBarHeight: statusBarHeight };
+
+  },
   onLaunch: function onLaunch() {
     console.log('App Launch');
   },
@@ -101,6 +112,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   onHide: function onHide(s) {
     console.log('App sHide');
   } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 8 */

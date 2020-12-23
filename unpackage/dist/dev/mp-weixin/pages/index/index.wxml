@@ -1,1 +1,1 @@
-<view class="content"><view style="{{'height:'+(statusBarHeight+'px')+';'}}"></view></view>
+<view class="content"><view style="{{'height:'+(statusBarHeight+'px')+';'}}"></view><view class="p-1 pt-2"><search vue-id="8dd740cc-1" bind:__l="__l"></search></view></view>

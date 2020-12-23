@@ -1,5 +1,11 @@
 <script>
+	const statusBarHeight = uni.getSystemInfoSync().statusBarHeight;
 	export default {
+		data() {
+			return {
+				statusBarHeight : statusBarHeight
+			}
+		 },
 		onLaunch: function() {
 			console.log('App Launch')
 		},

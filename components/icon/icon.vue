@@ -14,8 +14,8 @@
 				default:"text-dark"
 			},
 			iconSize:{
-				type:Number,
-				default:45
+				type:String,
+				default:'45'
 			}
 		}
 	}

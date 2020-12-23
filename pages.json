@@ -7,7 +7,11 @@
 		},
 		{"path": "pages/sort/sort"},
 		{"path": "pages/collection/collection"},
-		{"path": "pages/mine/mine"}
+		{"path": "pages/mine/mine"},
+		{"path": "pages/readList/readList"},
+		{"path": "pages/listenKnowledge/listenKnowledge"},
+		{"path": "pages/listenMusic/listenMusic"},
+		{"path": "pages/listenNoval/listenNoval"}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
