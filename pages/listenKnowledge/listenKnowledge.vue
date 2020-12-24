@@ -36,7 +36,7 @@
 			// 获取数据
 			getReadLists(){
 				indexDataApi.getReadListData().then(res=>{
-					console.log(res.data.books)
+					// console.log(res.data.books)
 					this.books = res.data.books
 				})
 			}
