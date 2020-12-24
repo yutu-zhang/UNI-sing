@@ -74,11 +74,11 @@
 			// 获取数据
 			getIndexDatas(){
 				indexDataApi.getAppIndex().then(res=>{
-					console.log(res)
+					// console.log(res)
 					this.Rebooks = res.data.Rebooks
-					console.log(this.Rebooks)
+					// console.log(this.Rebooks)
 					this.bookResources = res.data.bookResources
-					console.log(this.bookResources)
+					// console.log(this.bookResources)
 				})
 			}
 			

@@ -8,5 +8,13 @@ class indexData extends HTTP {
 			methods:"GET"
 		});
 	}
+	
+	// 榜单页面的数据获取
+	getReadListData(){
+		return this.request({
+			url:'/readList',
+			methods:"GET"
+		})
+	}
 }
 export {indexData}
